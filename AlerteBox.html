@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alerte-Box</title>
+</head>
+<body>
+    <div id="carre" onclick="alertAffichage()">
+        
+        <p>Texte</p>
+
+        <script>
+            const box = document.querySelector("#carre");
+            const style = window.getComputedStyle(box);
+
+           /*ALERT AFFICHAGE*/
+
+           function alertAffichage() {
+          
+          alert("color : " +
+                       style.color +
+                       "\n background color: " +
+                       style.backgroundColor +
+                       "\n height: " +
+                       style.height +
+                       "\n width: " +
+                       style.width +
+                       "\n display: " +
+                       style.display
+
+               );
+
+  }  
+
+        
+
+
+        </script>
+</body>
+</html>
